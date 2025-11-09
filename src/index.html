@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./output.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Delius&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .font-tegas {
+        font-family: "Roboto", sans-serif;
+      }
+      .font-imut {
+        font-family: "Delius", cursive;
+      }
+      .color-pertama {
+        color: #0f0e0e;
+      }
+      .color-kedua {
+        color: #541212;
+      }
+      .color-ketiga {
+        color: #468a9a;
+      }
+      .color-keempat {
+        color: #eeeeee;
+      }
+    </style>
+  </head>
+
+  <body class="bg-[#EEEEEE]">
+    <!-- Navbar -->
+    <nav class="bg-[#468A9A] shadow-2xl sticky top-0 z-50 backdrop-blur-2xl">
+      <div
+        class="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between"
+      >
+        <!-- Logo -->
+        <div
+          class="font-tegas text-blue-50 text-3xl font-extrabold tracking-wide"
+        >
+          FutemFlorist
+        </div>
+
+        <!-- Menu -->
+        <ul class="hidden md:flex space-x-12 font-tegas font-bold text-blue-50">
+          <li>
+            <a href="#" class="hover:text-amber-300 transition">Tentang Kami</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-amber-300 transition">Layanan</a>
+          </li>
+          <li>
+            <a href="#" class="hover:text-amber-300 transition">Kontak</a>
+          </li>
+          <li><a href="#" class="hover:text-amber-300 transition">Login</a></li>
+        </ul>
+
+        <!-- Tombol -->
+        <a
+          href="#"
+          class="bg-[#EEEEEE] text-[#468A9A] hover:bg-amber-300 hover:text-[#10375C] rounded-xl px-4 py-2 font-tegas font-bold shadow-md transition-transform duration-200 hover:-translate-y-1"
+        >
+          Daftar / Login
+        </a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-[#0F0E0E] py-16">
+      <div
+        class="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row items-center gap-12"
+      >
+        <!-- Teks -->
+        <div class="flex-1 text-center lg:text-left">
+          <h1 class="text-3xl font-bold text-[#EEEEEE] mb-4">
+            Welcome <br />FutemFlorist
+          </h1>
+          <p class="text-yellow-400 mb-6 leading-relaxed">
+            Hallo, sobat FutemFlorist! Yuk, buat kalian yang punya hari, teman,
+            sahabat, atau pasangan yang menurut kalian spesial — di FutemFlorist
+            solusinya buat <b>"special floral give"</b>. Cocok buat orang
+            spesial kita, atau reward untuk diri sendiri. Di sini kalian bisa
+            custom tema sendiri atau langsung datang ke tempat kami untuk
+            merangkai <b>"special floral give"</b>.
+          </p>
+          <button
+            class="px-6 py-3 bg-[#468A9A] text-white rounded-xl shadow hover:bg-blue-700 transition"
+          >
+            Klik Disini
+          </button>
+        </div>
+
+        <!-- Gambar -->
+        <div class="flex-1 flex justify-center">
+          <img
+            src="/florist 1.jpeg"
+            alt="Florist Section"
+            class="rounded-2xl shadow-md w-2/3 object-cover"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section class="bg-[#541212] py-16">
+      <div class="container mx-auto px-6 lg:px-20">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-white">I'm Here 4 U</h2>
+          <p class="text-white mt-2">
+            Choose me for your
+            <span style="color: #ffd700; font-weight: 700">Spesial</span>
+            someone or ur day
+          </p>
+        </div>
+
+        <!-- Grid Produk -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Item 1 -->
+          <div
+            class="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="/tulipbaru.jpeg"
+              alt="Tulip"
+              class="w-24 h-24 rounded-full mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 font-imut mb-2">
+              Tulip
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Bunga tulip melambangkan cinta yang sempurna, keindahan, dan
+              harapan.
+            </p>
+            <a
+              href="#"
+              class="px-4 py-2 bg-amber-800 text-white rounded-lg hover:bg-blue-700 transition"
+              >Buy</a
+            >
+          </div>
+
+          <!-- Item 2 -->
+          <div
+            class="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="/mawar.jpeg"
+              alt="Mawar"
+              class="w-24 h-24 rounded-full mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Mawar</h3>
+            <p class="text-gray-600 mb-4">
+              Mawar melambangkan cinta, keindahan, dan kehormatan.
+            </p>
+            <a
+              href="#"
+              class="px-4 py-2 bg-amber-800 text-white rounded-lg hover:bg-blue-700 transition"
+              >Buy</a
+            >
+          </div>
+
+          <!-- Item 3 -->
+          <div
+            class="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="/bungaMekar.jpeg"
+              alt="Sedap Malam"
+              class="w-24 h-24 rounded-full mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">
+              Sedap Malam
+            </h3>
+            <p class="text-gray-600 mb-4">
+              Bunga ini melambangkan cinta dan keindahan dengan makna berbeda di
+              setiap budaya.
+            </p>
+            <a
+              href="#"
+              class="px-4 py-2 bg-amber-800 text-white rounded-lg hover:bg-blue-700 transition"
+              >Buy</a
+            >
+          </div>
+
+          <!-- Item 4 -->
+          <div
+            class="bg-white rounded-2xl shadow p-6 flex flex-col items-center text-center"
+          >
+            <img
+              src="/hydrangea.jpeg"
+              alt="Hydrangea"
+              class="w-24 h-24 rounded-full mb-4"
+            />
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">Hydrangea</h3>
+            <p class="text-gray-600 mb-4">
+              Melambangkan emosi tulus, rasa syukur, dan pengertian dalam budaya
+              Jepang.
+            </p>
+            <a
+              href="#"
+              class="px-4 py-2 bg-amber-800 text-white rounded-lg hover:bg-blue-700 transition"
+              >Buy</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-gray-50 py-16">
+      <div
+        class="container mx-auto px-6 lg:px-20 grid grid-cols-1 lg:grid-cols-2 gap-12"
+      >
+        <!-- Kiri -->
+        <div class="flex flex-col justify-center">
+          <h2 class="text-3xl font-bold text-gray-800 mb-4">Hubungi Kami</h2>
+          <p class="text-gray-600 mb-6">
+            Silakan isi form di samping, kami akan segera merespons kebutuhan
+            Anda.
+          </p>
+          <div class="text-gray-700">
+            <h3 class="text-xl font-semibold mb-2">Lokasi Kami</h3>
+            <p>Jl. Contoh No. 123<br />Jakarta, Indonesia</p>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="bg-white shadow rounded-2xl p-8">
+          <form action="#login" method="POST" class="space-y-6">
+            <div>
+              <label class="block text-gray-700 font-medium mb-2"
+                >Nama Lengkap</label
+              >
+              <input
+                type="text"
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium mb-2"
+                >No. Telp</label
+              >
+              <input
+                type="tel"
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">Email</label>
+              <input
+                type="email"
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium mb-2">Alamat</label>
+              <textarea
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              ></textarea>
+            </div>
+
+            <div>
+              <label class="block text-gray-700 font-medium mb-2"
+                >Tanggal Pemesanan</label
+              >
+              <input
+                type="date"
+                class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              />
+            </div>
+
+            <button
+              type="submit"
+              class="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
+            >
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#468A9A] text-gray-300 py-12">
+      <div
+        class="container mx-auto px-6 lg:px-20 grid grid-cols-1 md:grid-cols-4 gap-8"
+      >
+        <div>
+          <h2 class="text-xl font-bold text-white mb-4">Tentang Kami</h2>
+          <p class="text-gray-400">
+            Kami menyediakan layanan terbaik untuk kebutuhan bunga dan dekorasi
+            Anda.
+          </p>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-white mb-4">Navigasi</h2>
+          <ul class="space-y-2">
+            <li><a href="#" class="hover:text-white transition">Beranda</a></li>
+            <li><a href="#" class="hover:text-white transition">Tentang</a></li>
+            <li><a href="#" class="hover:text-white transition">Layanan</a></li>
+            <li><a href="#" class="hover:text-white transition">Kontak</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-white mb-4">Kontak</h2>
+          <ul class="space-y-2">
+            <li>📍 Jl. Contoh No.123, Jakarta</li>
+            <li>📞 +62 812-3456-7890</li>
+            <li>✉️ email@example.com</li>
+          </ul>
+        </div>
+
+        <div>
+          <h2 class="text-xl font-bold text-white mb-4">Ikuti Kami</h2>
+          <div class="flex space-x-4 text-xl">
+            <a href="#" class="hover:text-white transition">🌐</a>
+            <a href="#" class="hover:text-white transition">📘</a>
+            <a href="#" class="hover:text-white transition">🐦</a>
+            <a href="#" class="hover:text-white transition">📸</a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="border-t border-[#5EA6B7] mt-10 pt-6 text-center text-gray-100 text-sm"
+      >
+        © 2025 FutemFlorist. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
